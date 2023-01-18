@@ -1,0 +1,32 @@
+BTS (base transceiver station) -> Tower + room
+
+In Room -> RBS (Radio Base Station), TX (Transimision Equipment), Power
+
+RBS -> Sensor, consumes more power (35 amps)
+TX -> Sensor, consumes less power, MUST NOT BE DOWN, battery backup keeps it alive (15 amps)
+Power -> Sensor, Distribution board, battery backup, Rectifier (Controls the total power)
+
+AG -> Auto generator
+
+Towers unique identfier -> TX and RBS
+
+Batter -> Critical load (TX), non-critial load (RBS)
+When DB is out, depends on bat (48 volt general , 52/53 volt (swing voltage)) (44 -> RBS down, TX up)
+42 -> Tx down
+52-42 -> 8-10 hours, or 16-20 hours if many towers
+
+Circle ante (Mhz)
+calls -> Long ante (GHz) -> rbs, tx -> circle -> connects to other mobile
+
+BSC -> Base station controller
+- Many towers are connected to BSC
+- Call authentication
+
+MSC -> Master station controller, very sophisticated
+- Many BSCs are connected
+- Call authentication
+
+
+# Alarms
+- MF: Mains Fail, power has gone out
+- Batt: When 45 volts
